@@ -21,10 +21,11 @@ module.exports = {
       josefin: ['"Josefin Sans"', ...defaultTheme.fontFamily.serif],
     },
     extend: {
-      backgroundImage: {
+      backgroundImage: (theme) => ({
         'hero-image': "url('../src/assets/images/mobile/image-hero.jpg')",
-        'desktop-hero-image': "url('../src/assets/images/desktop/image-hero.jpg')",
-      },
+        'desktop-hero-image':
+          "url('../src/assets/images/desktop/image-hero.jpg')",
+      }),
     },
   },
   plugins: [],
