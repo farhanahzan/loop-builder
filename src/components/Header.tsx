@@ -13,7 +13,7 @@ export const Header = () => {
     setOpenMobileMenu(true)
   }
   return (
-    <header className="max-w-2xl lg:max-w-[70rem] mx-auto absolute top-0 left-0 right-0 z-10">
+    <header className="max-w-2xl lg:max-w-[70rem]    mx-auto absolute top-0 left-0 right-0 z-10">
       <div className="bg-transparent px-6  mt-10 flex flex-row justify-between items-center">
         <img className="w-64 max-w-[48%] lg:w-40" src={logo} alt="logo" />
         <img

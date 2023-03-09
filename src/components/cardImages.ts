@@ -7,6 +7,15 @@ import image6 from '../assets/images/mobile/image-pocket-borealis.jpg';
 import image7 from '../assets/images/mobile/image-curiosity.jpg';
 import image8 from '../assets/images/mobile/image-fisheye.jpg';
 
+import deskImage1 from '../assets/images/desktop/image-deep-earth.jpg';
+import deskImage2 from '../assets/images/desktop/image-night-arcade.jpg';
+import deskImage3 from '../assets/images/desktop/image-soccer-team.jpg';
+import deskImage4 from '../assets/images/desktop/image-grid.jpg';
+import deskImage5 from '../assets/images/desktop/image-from-above.jpg';
+import deskImage6 from '../assets/images/desktop/image-pocket-borealis.jpg';
+import deskImage7 from '../assets/images/desktop/image-curiosity.jpg';
+import deskImage8 from '../assets/images/desktop/image-fisheye.jpg';
+
 import facebook from '../assets/images/icon-facebook.svg'
 import instragram from '../assets/images/icon-instagram.svg'
 import pinterest from '../assets/images/icon-pinterest.svg'
@@ -27,7 +36,7 @@ type MenuProps={
 
 
 
-export const images: ImagesProps[] = [
+export const mobileImages: ImagesProps[] = [
   {
     image: image1,
     label: `Deep Earth`,
@@ -61,7 +70,40 @@ export const images: ImagesProps[] = [
     label: 'Make it fisheye',
   },
 ];
-
+export const desktopImages: ImagesProps[] = [
+  {
+    image: deskImage1,
+    label: `Deep Earth`,
+  },
+  {
+    image: deskImage2,
+    label: 'Night Arcade',
+  },
+  {
+    image: deskImage3,
+    label: 'Soccer Team Vr',
+  },
+  {
+    image: deskImage4,
+    label: 'The Grid',
+  },
+  {
+    image: deskImage5,
+    label: 'Fromup aboveVR',
+  },
+  {
+    image: deskImage6,
+    label: 'Pocket Borealis',
+  },
+  {
+    image: deskImage7,
+    label: 'The Curiosity',
+  },
+  {
+    image: deskImage8,
+    label: 'Make it fisheye',
+  },
+];
 export const menu:MenuProps[] = [
   {
     label: 'About',
