@@ -11,11 +11,15 @@ export function classNames(...classes: (string | undefined | null)[]): string {
 export const SectionTwo = () => {
   var even;
   return (
-    <section className="max-w-2xl mx-auto px-6 md:px-0 mt-16 py-10 flex flex-col justify-start items-center">
+    <section className="max-w-2xl lg:max-w-[70rem] mx-auto px-6 md:px-0 mt-16 py-10 flex flex-col justify-start items-center">
       <h2 className="text-center text-[2rem] leading-[2rem] tracking-wide   font-josefin text-Black uppercase  pb-12">
         Our Creations
       </h2>
-      <div className={classNames('flex flex-col  items-center md:items-end  gap-5 w-full')}>
+      <div
+        className={classNames(
+          'flex flex-col  items-center md:items-end  gap-5 w-full lg:hidden'
+        )}
+      >
         {images.map((card, id) => {
           even = id % 2 == 0;
           var odd = id % 2 == 1;

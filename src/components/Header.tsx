@@ -13,8 +13,8 @@ export const Header = () => {
     setOpenMobileMenu(true)
   }
   return (
-    <header className="max-w-2xl lg:max-w-full mx-auto absolute top-0 left-0 right-0 z-10">
-      <div className="bg-transparent px-6  py-10 flex flex-row justify-between items-center">
+    <header className="max-w-2xl lg:max-w-[70rem] mx-auto absolute top-0 left-0 right-0 z-10">
+      <div className="bg-transparent px-6  mt-10 flex flex-row justify-between items-center">
         <img className="w-64 max-w-[48%] lg:w-40" src={logo} alt="logo" />
         <img
           src={menuIcon}
@@ -22,11 +22,14 @@ export const Header = () => {
           alt="menu icon"
           onClick={handleOpen}
         />
-        <ul className="text-White text-sm font-alata   lg:flex lg:flex-row lg:gap-7 px-8 hidden">
+        <ul className="relative text-White text-sm font-alata   lg:flex lg:flex-row lg:gap-7 px-8 hidden">
           {menu.map((m, index) => (
-            <li key={index} className="my-3 py-2">
+            <li
+              key={index}
+              className="group my-3 py-2  flex flex-col items-center gap-1"
+            >
               <a href={m.link}>{m.label}</a>
-              <span className='h-2 w-20 bg-White'></span>
+              <span className=" group-hover:block absolute top-12 hidden h-[2px] w-6 bg-White "></span>
             </li>
           ))}
         </ul>
