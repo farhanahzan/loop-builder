@@ -26,10 +26,10 @@ export const Header = () => {
           {menu.map((m, index) => (
             <li
               key={index}
-              className="group my-3 py-2  flex flex-col items-center gap-1"
+              className="group  my-3 py-2  flex flex-col items-center gap-1"
             >
               <a href={m.link}>{m.label}</a>
-              <span className=" group-hover:block absolute top-12 hidden h-[2px] w-6 bg-White "></span>
+              <span className=" group-hover:block absolute top-10 bg-transparent h-[2px] w-0 lg:w-7 group-hover:bg-White transition ease-in-out delay-300 duration-500 group-hover:translate-y-2  "></span>
             </li>
           ))}
         </ul>
