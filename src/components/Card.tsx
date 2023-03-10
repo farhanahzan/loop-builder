@@ -8,7 +8,7 @@ export const Card = ({ image, label, classNames }: CardProps) => {
     <div
       className={
         classNames +
-        'group relative max-w-sm md:max-w-[30rem] lg:max-w-[21.5%] h-32 lg:h-[21rem] w-full hover:font-semibold  transition-all ease-linear delay-150 duration-300 '
+        'group relative max-w-sm md:max-w-[30rem] lg:max-w-[21.5%] h-32 lg:h-[21rem] w-full hover:font-semibold  transition-transform ease-linear delay-150 duration-300 '
       }
     >
       <div
@@ -17,7 +17,7 @@ export const Card = ({ image, label, classNames }: CardProps) => {
       >
         {/* <img className="opacity-60" src={image} alt={label} /> */}
       </div>
-      <h2 className="absolute bottom-3 left-4  font-josefin text-[1.6rem] leading-7 uppercase tracking-wide text-White w-[7.5rem] md:w-full lg:w-14 z-50  group-hover:drop-shadow-2xl group-hover:shadow-Black ">
+      <h2 className="absolute bottom-3 left-4  font-josefin text-[1.6rem] leading-7 uppercase tracking-wide text-White w-[7.5rem] md:w-full lg:w-14 z-50  group-hover:drop-shadow-2xl group-hover:shadow-Black transition-none ">
         {label}
       </h2>
     </div>
