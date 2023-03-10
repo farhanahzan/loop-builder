@@ -4,7 +4,7 @@ import { socialMediaIcons } from '../components/cardImages';
 
 export const Footer = () => {
   return (
-    <footer className="  mt-16 py-10 lg:py-16 lg:pb-24 bg-Black">
+    <footer className="  mt-16 py-10 lg:py-16 lg:pb-24 bg-Black lg:mt-36">
       <div className=" px-6 lg:px-10 lg:max-w-[70rem] mx-auto flex flex-col lg:flex-row  items-center lg:items-end lg:justify-between ">
         <div>
           <img className="h-8 mx-auto lg:ml-0" src={logo} alt="logo" />
