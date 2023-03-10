@@ -34,13 +34,13 @@ export const SectionTwo = () => {
           Our Creations
         </h2>
 
-        <button className="text-sm font-alata uppercase  text-Black border-2 border-DarkGray px-8 py-2 my-8 tracking-widest hover:bg-Black hover:text-White hover:border-Black hidden lg:block transition-all ease-in-out delay-150 duration-100 hover:animate-pulse">
+        <button className="text-sm font-alata uppercase  text-Black border-2 border-DarkGray px-8 py-2 my-8 tracking-widest hover:bg-Black hover:text-White hover:border-Black hidden lg:block transition-all ease-in-out delay-150 duration-700 hover:animate-pulse">
           See All
         </button>
       </div>
       <div
         className={classNames(
-          'flex flex-col lg:flex-row  items-center md:items-end lg:justify-center lg:flex-wrap  gap-5 lg:gap-8 w-full '
+          'flex flex-col lg:flex-row  items-center md:items-end lg:justify-center lg:flex-wrap  gap-5 lg:gap-8 w-full   '
         )}
       >
         {(windowSize[0] > 1024 ? desktopImages : mobileImages).map(
